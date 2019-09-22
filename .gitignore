@@ -1,3 +1,3 @@
-Document.docx,
-wf*,
+*.docx,
+*.png,
 *.txt
