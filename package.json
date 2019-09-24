@@ -16,5 +16,7 @@
     "url": "https://github.com/Talon-Dechert/Coworking/issues"
   },
   "homepage": "https://github.com/Talon-Dechert/Coworking#readme",
-  "dependencies": {}
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
 }
