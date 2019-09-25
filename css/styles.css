@@ -1,0 +1,58 @@
+:root {
+  --black: #272727;
+  --yellow: #ffc600;
+  --red: #eb4c34;
+  --blue: #3268a8;
+}
+
+body {
+  font-size: 20px;
+}
+
+#navbarItems {
+  display: grid;
+  grid-gap: 20px;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  background-image: linear-gradient(red, yellow);
+  width: 120px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo {
+  font-size: 80px;
+  text-align: center;
+}
+
+.navLink {
+  background: var(--yellow);
+  text-align: end;
+  height: 50%;
+  text-transform: uppercase;
+  margin: 0px 0px 0px;
+}
+
+.navLink hover {
+  background: var(--blue);
+}
+
+.item a {
+  text-decoration: none;
+  color: var(--black);
+  margin-right: 10%;
+}
+
+.item navFooter {
+  margin: 0px;
+  padding: 0px;
+}
+
+#copyright {
+  font-size: 14px;
+}
+
+#contact {
+  font-size: 20px;
+}
