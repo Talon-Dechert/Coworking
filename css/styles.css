@@ -9,6 +9,10 @@ body {
   font-size: 20px;
 }
 
+.navbar {
+  margin: 0px;
+}
+
 #navbarItems {
   display: grid;
   grid-gap: 20px;
@@ -27,14 +31,18 @@ body {
 }
 
 .navLink {
-  background: var(--yellow);
-  text-align: end;
   height: 50%;
-  text-transform: uppercase;
-  margin: 0px 0px 0px;
 }
 
-.navLink hover {
+.navLink a {
+  text-align: center;
+  background: var(--yellow);
+  display: block;
+  margin: 0px 0px 0px 0px;
+  text-transform: uppercase;
+}
+
+.navLink :hover {
   background: var(--blue);
 }
 
