@@ -9,10 +9,6 @@ body {
   font-size: 20px;
 }
 
-.navbar {
-  margin: 0px;
-}
-
 #navbarItems {
   display: grid;
   grid-gap: 20px;
