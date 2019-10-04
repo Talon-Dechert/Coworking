@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 
     <title>Coworking United</title>
   </head>
@@ -47,14 +48,61 @@
         All rights reserved
       </h4>
     </div>
-    
+    <div id="bookModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Book a Tour</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group row">
+                <label for="when" class="col-md-2 col-form-label">Choose a time!</label>
+                <div class="form-inline col-md">
+                  <input type="text" id="date" name="when" placeholder="Date" class="form-control mr-md-2">
+                  <input type="text" id="time" name="when" placeholder="Time" class="form-control">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="email" class="col-md-2">Email Address</label>
+                <div class="form-inline col-md">
+                  <input type="email" class="form-control form-control-sm mr-1" id="email" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="offset-md-3 col-md-10">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    Cancel
+                  </button>
+                  <button type="submit" class="btn btn-primary">
+                    Reserve
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
     <div id="main">
       <div id="jumbo">
-        <button class="openbtn" onclick="openNav()">&#9776; CU</button>
+        <button class="openbtn" onclick="alternate()">&#9776; CU</button>
         <div id="header">
           <h1 class="cowhead">Coworking United</h1>
           <h2 class="cowhead">Your one stop for all your coworking needs!</h2>
         </div>
+      </div>
+
+      <div class="content">
+        <div class="item" id="tourButton"><button data-target="#bookModal" class="btn btn-primary" data-toggle="modal"><h2>Book a Tour!</h2></button></div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
       </div>
     </div>
 
@@ -62,5 +110,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 </body>
 </html>

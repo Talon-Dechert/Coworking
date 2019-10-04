@@ -78,7 +78,6 @@
   transition: margin-left .5s; /* If you want a transition effect */
   padding: 20px;
   background: var(--black);
-  display: grid;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
@@ -92,9 +91,33 @@
   margin: -20px;
   color: var(--main);
   text-shadow: 1px 1px black;
+  border-radius: 25px;
 }
 
 #header {
   text-align: center;
   padding-bottom: 40px;
+}
+
+.content {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.item {
+  width: 48%;
+  height: 100px;
+  margin-bottom: 2%;
+}
+
+.item:nth-child(3n-2) {
+  width: 100%;
+}
+
+#tourButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
