@@ -90,7 +90,7 @@
   background: var(--red);
   margin: -20px;
   color: var(--main);
-  text-shadow: 1px 1px black;
+  text-shadow: 2px 2px var(--black);
   border-radius: 25px;
 }
 
@@ -108,16 +108,47 @@
 
 .item {
   width: 48%;
-  height: 100px;
+  align-items: initial;
   margin-bottom: 2%;
+  color: var(--main);
 }
 
 .item:nth-child(3n-2) {
   width: 100%;
 }
 
-#tourButton {
+#tourButtonDiv {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#tourButton {
+  background: var(--sec-main);
+  border: 1px var(--sec-main);
+}
+
+#groupphoto {
+  max-width: 100%;
+  height: auto;
+}
+
+.news {
+  text-align: center;
+  background: var(--red);
+  text-shadow: 2px 2px var(--black);
+  row-gap: 0%;
+}
+
+.card {
+  border: 0px;
+}
+
+#newsButtDiv {
+  padding-top: 5px;
+}
+
+#newsButt {
+  background: var(--sec-main);
+  border: 1px var(--sec-main);
 }
