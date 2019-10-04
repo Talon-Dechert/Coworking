@@ -1,22 +1,25 @@
-let status = 0;
-
-/* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
-function openNav() {
-  document.getElementById("mySidebar").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  status = 1;
-}
-
-/* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
-function closeNav() {
-  document.getElementById("mySidebar").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  status = 0;
-}
-
-function alternate() {
-  if (status === 0) {
-    openNav();
+const navToggle = (function iife() {
+  // These are available to the scopes below it but not above it
+  const sidebar = document.getElementById("mySidebar");
+  const main = document.getElementById("main");
+  let isOpen = false;
+  function toggle(targets=[sidebar,main], status=isOpen) {
+    if(!status) {
+      targets[0].style.width = "250px";
+      targets[1].style.marginLeft = "250px";
+    } else {
+      targets[0].style.width = "0";
+      targets[1].style.marginLeft = "0";
+    }
+    return !status
   }
-  else closeNav();
-}
+  // this marks the end of what we don't want to be called over and over again
+  // when we use those they aren't going to be redeclarations of themselves
+
+  // This is the function actually getting assigned to const navToggle
+  // It's name isn't callable for it's local to the scope of iife
+  // It is returned to be assigned still
+  return function toggleNav() {
+    isOpen = toggle();
+  }
+}());
