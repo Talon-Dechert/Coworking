@@ -7,9 +7,9 @@ const navToggle = (function iife() {
   const main = document.getElementById("main");
   let isOpen = false;
   function toggle(targets=[sidebar,main], status=isOpen) {
-    if (sml) {
+    if (sml.matches) {
       if(!status) {
-        targets[0].style.width = "100px";
+        targets[0].style.width = "70px";
       } else {
         targets[0].style.width = "0px";
       }

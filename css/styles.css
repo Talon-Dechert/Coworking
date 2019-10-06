@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Mansalva|Work+Sans&display=swap');
 
 :root {
   --black: #1a1423;
@@ -8,7 +7,6 @@
   --sec-main: #c5b1a5;
   --lt-main:#ab8476;
   background: var(--black);
-  font-family: 'Work Sans', sans-serif;
 }
 
 
@@ -30,13 +28,13 @@
   color: var(--sec-main);
 }
 
+
 /* The sidebar links */
 .sidebar a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.5rem;
   color: var(--lt-main);
-  display: block;
   transition: 0.3s;
 }
 
@@ -55,13 +53,15 @@
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 1.5rem;
   margin-left: 50px;
+  cursor: pointer;
 }
+
 
 /* The button used to open the sidebar */
 .openbtn {
-  font-size: 20px;
+  font-size: 1.2rem;
   cursor: pointer;
   background-color: var(--sec-main);
   color: var(--arsenic);
@@ -134,8 +134,10 @@
 }
 
 #tourButton {
+  color: var(--main);
+  text-shadow: 1px 1px var(--black);
   background: var(--sec-main);
-  border: 1px var(--sec-main);
+  border: 1px solid var(--sec-main);
 }
 
 .photo {
@@ -167,4 +169,23 @@
 #newsButt {
   background: var(--sec-main);
   border: 1px var(--sec-main);
+}
+
+.modal-header {
+  background: var(--red);
+  color: var(--main);
+  border: 2px solid var(--black);
+  border-radius: 0px;
+}
+
+.modal-header .close {
+  color: var(--lt-main);
+  text-shadow: 1px 1px var(--main);
+}
+
+.modal-body {
+  background: var(--red);
+  color: var(--main);
+  border: 2px solid var(--black);
+  border-radius: 0px;
 }
