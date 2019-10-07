@@ -15,42 +15,43 @@
   </head>
   <body>
     <div id="mySidebar" class="sidebar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <a href="index.html"><span><i class="fa fa-home"></i></span>
-        Home
+      <a class="closebtn" onclick="navToggle()">&times;</a>
+      <a href="#" class="active"><span><i class="fa fa-home"></i></span>
+        <p class="d-none d-lg-inline">Home</p>
       </a>
       <a href="aboutus.html"><span><i class="fa fa-info"></i></span>
-        About Us
+        <p class="d-none d-lg-inline">About Us</p>
       </a>
       <a href="events.html"><span><i class="fa fa-coffee"></i></span>
-        Events
+        <p class="d-none d-lg-inline">Events</p>
       </a>
       <a href="calendar.html"><span><i class="fa fa-calendar"></i></span>
-        Calendar
+        <p class="d-none d-lg-inline">Calendar</p>
       </a>
       <a href="membership.html"><span><i class="fa fa-credit-card"></i></span>
-        Membership Options
+        <p class="d-none d-lg-inline">Membership Options</p>
       </a>
-      <a href="contact.html" class="active"><span><i class="fa fa-comment"></i></span>
-        Contact Us
+      <a href="contact.html"><span><i class="fa fa-comment"></i></span>
+        <p class="d-none d-lg-inline">Contact Us</p>
       </a>
-      <h3 class="sideAddress">2020 Main Street<br>
-        Seattle, WA<br>
+      <h3 class="sideAddress"><p class="d-none d-lg-inline">2020 Main Street<br>
+        Seattle, WA<br></p>
       <span><i class="fa fa-phone"></i></span>
       <span><i class="fa fa-facebook"></i></span>
       <span><i class="fa fa-twitter"></i></span>
       <span><i class="fa fa-linkedin"></i></span>
       </h3>
-      <h4 class="sideFooter">
+      <h4 class="sideFooter"><p class="d-none d-lg-inline">
         Copyright <span><i class="fa fa-copyright"></i></span> 2019<br>
         Coworking United<br>
         All rights reserved
+      </p>
       </h4>
     </div>
     
     <div id="main">
       <div id="jumbo">
-        <button class="openbtn" onclick="alternate()">&#9776; CU</button>
+        <button class="openbtn" onclick="navToggle()">&#9776; CU</button>
         <div id="header">
           <h1 class="cowhead">Coworking United</h1>
           <h2 class="cowhead">Your one stop for all your coworking needs!</h2>
