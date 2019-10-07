@@ -1,5 +1,4 @@
 const sml = window.matchMedia("(max-width:768px)");
-console.log(sml);
 
 const navToggle = (function iife() {
   // These are available to the scopes below it but not above it
